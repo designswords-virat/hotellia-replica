@@ -675,9 +675,11 @@ p { margin: 0; }
       "links1 links2"
       "contact contact";
   }
-  .room-reveal { max-height: 200px; opacity: 1; margin-top: 22px; }
+  .room-card { height: auto; }
+  .room-media { align-self: stretch; }
   .room-card:hover .room-media,
-  .room-card:focus-within .room-media { transform: none; }
+  .room-card:focus-within .room-media { width: 100%; }
+  .room-reveal { max-height: 220px; opacity: 1; margin-top: 22px; }
   .dine-card:hover .dine-media { transform: none; }
   .dine-meta { left: 22px; bottom: 22px; }
 }
