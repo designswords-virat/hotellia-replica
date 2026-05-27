@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotellia — A Boutique Hotel</title>
+  <meta name="description" content="Hotellia is a clean, minimal website template crafted for boutique hotels, luxury resorts, and serene hospitality experiences.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <a href="#" class="brand" aria-label="Hotellia home">
+      <svg class="brand-icon" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <path d="M14 13 V27 M14 20 H26 M26 13 V27" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="square"/>
+      </svg>
+      <span class="brand-name">Hotellia</span>
+    </a>
+    <nav class="site-nav">
+      <button class="icon-btn" aria-label="Concierge">
+        <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18">
+          <path d="M12 4 A6 6 0 0 1 18 10 V15 H6 V10 A6 6 0 0 1 12 4 Z M5 16 H19 M11 19 H13" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuPanel">
+        <span>Menu</span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="menu-panel" id="menuPanel" aria-hidden="true">
+    <div class="menu-inner">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#dine">Wine &amp; Dine</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#reserve" class="reserve">Reserve</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="hero" id="hero" data-anim>
+      <div class="hero-bg">
+        <img src="https://framerusercontent.com/images/ku9kgZoA9c8tZiYS1iI1ubxVxG0.jpg" alt="The hotel main view">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-foot">
+        <div class="hero-tag-row">
+          <p class="eyebrow">A boutique hotel designed for slow living</p>
+          <p class="eyebrow right">Life, Unhurried</p>
+        </div>
+        <h1 class="brand-title">HOTELLIA</h1>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Current offers">
+      <div class="ticker-track">
+        <a href="#offers" class="ticker-item">
+          <span class="ticker-title">SUMMER ESCAPE</span>
+          <span class="ticker-sub">Up to 30% off</span>
+        </a>
+        <span class="ticker-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M14 13 V27 M14 20 H26 M26 13 V27" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="square"/></svg>
+          Hotellia
+        </span>
+        <a href="#offers" class="ticker-item">
+          <span class="ticker-title">SPRING SALE</span>
+          <span class="ticker-sub">Up to 40% off</span>
+        </a>
+        <span class="ticker-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M14 13 V27 M14 20 H26 M26 13 V27" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="square"/></svg>
+          Hotellia
+        </span>
+        <a href="#offers" class="ticker-item">
+          <span class="ticker-title">SUMMER ESCAPE</span>
+          <span class="ticker-sub">Up to 30% off</span>
+        </a>
+        <span class="ticker-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M14 13 V27 M14 20 H26 M26 13 V27" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="square"/></svg>
+          Hotellia
+        </span>
+        <a href="#offers" class="ticker-item">
+          <span class="ticker-title">SPRING SALE</span>
+          <span class="ticker-sub">Up to 40% off</span>
+        </a>
+        <span class="ticker-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M14 13 V27 M14 20 H26 M26 13 V27" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="square"/></svg>
+          Hotellia
+        </span>
+        <a href="#offers" class="ticker-item">
+          <span class="ticker-title">SUMMER ESCAPE</span>
+          <span class="ticker-sub">Up to 30% off</span>
+        </a>
+        <span class="ticker-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M14 13 V27 M14 20 H26 M26 13 V27" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="square"/></svg>
+          Hotellia
+        </span>
+        <a href="#offers" class="ticker-item">
+          <span class="ticker-title">SPRING SALE</span>
+          <span class="ticker-sub">Up to 40% off</span>
+        </a>
+        <span class="ticker-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M14 13 V27 M14 20 H26 M26 13 V27" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="square"/></svg>
+          Hotellia
+        </span>
+      </div>
+    </section>
+
+    <section class="dine" id="dine">
+      <div class="section-head">
+        <h2 class="section-title">wine &amp; dine</h2>
+        <p class="section-lead">Whether you're settling into Ember for an evening cocktail or sitting down to a full dinner at Grove &amp; Grain, every visit is an occasion worth savouring.</p>
+      </div>
+      <div class="dine-grid">
+        <article class="dine-card" data-anim>
+          <div class="dine-media">
+            <img src="https://framerusercontent.com/images/aecQb6G8sTkxFM7pCstICMtgK1c.jpg" alt="Ember bar">
+          </div>
+          <div class="dine-meta">
+            <span class="kicker">BAR MENU</span>
+            <h3>Ember</h3>
+          </div>
+        </article>
+        <article class="dine-card" data-anim>
+          <div class="dine-media">
+            <img src="https://framerusercontent.com/images/BYhy0S6WEa6Z7MwapQ6RsqFy0c.jpg" alt="Grove &amp; Grain restaurant">
+          </div>
+          <div class="dine-meta">
+            <span class="kicker">RESTAURANT MENU</span>
+            <h3>Grove &amp; Grain</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experiences" id="experiences">
+      <div class="section-head center">
+        <h2 class="section-title">Total escape</h2>
+        <p class="section-lead">From intimate candlelit dinners to sun-drenched terrace breakfasts, our dining venues offer an unforgettable culinary journey crafted for every occasion.</p>
+      </div>
+      <div class="exp-list">
+        <article class="exp-row" data-anim>
+          <div class="exp-label"><h3>UNWIND</h3></div>
+          <p class="exp-copy">Sink into pure relaxation with access to our spa, pool, and wellness amenities designed to melt the day away.</p>
+          <div class="exp-media"><img src="https://framerusercontent.com/images/BdD4wXOCV2bulmOyM9p3my24h7Y.jpg" alt="Unwind"></div>
+        </article>
+        <article class="exp-row" data-anim>
+          <div class="exp-label"><h3>FEAST</h3></div>
+          <p class="exp-copy">Savor thoughtfully crafted dishes and seasonal menus that bring local flavors to your table, morning to night.</p>
+          <div class="exp-media"><img src="https://framerusercontent.com/images/8m94riNLaGzE3i88XbSsQzISoo.jpg" alt="Feast"></div>
+        </article>
+        <article class="exp-row" data-anim>
+          <div class="exp-label"><h3>EXPLORE</h3></div>
+          <p class="exp-copy">Discover the best of the area with curated local tips, guided tours, and everything you need to venture out with confidence.</p>
+          <div class="exp-media"><img src="https://framerusercontent.com/images/g9vhrrcQ2KbxkcmM9SB8TTMKjE0.jpg" alt="Explore"></div>
+        </article>
+        <article class="exp-row" data-anim>
+          <div class="exp-label"><h3>REST</h3></div>
+          <p class="exp-copy">Experience the art of a perfect night's sleep with premium bedding, a serene atmosphere, and every comfort taken care of.</p>
+          <div class="exp-media"><img src="https://framerusercontent.com/images/2ZKFwbdZu9WqYPrFFAvRcS9F1F0.jpg" alt="Rest"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="rooms" id="rooms">
+      <div class="section-head">
+        <h2 class="section-title">rooms</h2>
+        <p class="section-lead">Each room is a sanctuary — designed with care, finished with character, and made to feel like yours from the moment you arrive.</p>
+      </div>
+
+      <div class="rooms-grid">
+        <article class="room-card" data-anim>
+          <div class="room-media">
+            <img src="https://framerusercontent.com/images/zZdyyiVX9MflCtT3ltry7tLfxk.jpg" alt="Double Deluxe room">
+          </div>
+          <div class="room-body">
+            <h3>DOUBLE DELUXE</h3>
+            <p class="room-desc">Warm light, garden stillness, and a queen bed dressed for long mornings. Your private patio awaits just beyond the door.</p>
+            <div class="room-reveal">
+              <div class="room-specs">
+                <span class="spec"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M3 17v-4a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v4M3 17h18M3 17v3M21 17v3M6 10V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> Queen Bed</span>
+                <span class="spec"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.4" fill="none"/><circle cx="17" cy="9" r="2.5" stroke="currentColor" stroke-width="1.4" fill="none"/><path d="M3 19c.5-3 3-5 6-5s5.5 2 6 5M14 19c.4-2 2-3.5 4-3.5s3 1 3.5 2.5" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg> 2 Guests</span>
+                <span class="spec"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M4 4h4M4 4v4M20 4h-4M20 4v4M4 20h4M4 20v-4M20 20h-4M20 20v-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg> 55 Sqm</span>
+              </div>
+              <div class="room-price"><span class="amt">$199</span> <em>/night</em></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card" data-anim>
+          <div class="room-media">
+            <img src="https://framerusercontent.com/images/HLcKtoKbOsTiY6g4SV4uh574.jpg" alt="Junior Suite">
+          </div>
+          <div class="room-body">
+            <h3>JUNIOR SUITE</h3>
+            <p class="room-desc">Generous space, a king bed, and a sitting area made for unhurried evenings. Comfort elevated to something quietly luxurious.</p>
+            <div class="room-reveal">
+              <div class="room-specs">
+                <span class="spec"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M3 17v-4a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v4M3 17h18M3 17v3M21 17v3M6 10V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> King Bed</span>
+                <span class="spec"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.4" fill="none"/><circle cx="17" cy="9" r="2.5" stroke="currentColor" stroke-width="1.4" fill="none"/><path d="M3 19c.5-3 3-5 6-5s5.5 2 6 5M14 19c.4-2 2-3.5 4-3.5s3 1 3.5 2.5" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg> 2 Guests</span>
+                <span class="spec"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M4 4h4M4 4v4M20 4h-4M20 4v4M4 20h4M4 20v-4M20 20h-4M20 20v-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg> 76 Sqm</span>
+              </div>
+              <div class="room-price"><span class="amt">$450</span> <em>/night</em></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card" data-anim>
+          <div class="room-media">
+            <img src="https://framerusercontent.com/images/fPnRAQYw4TxlkDETR8HPnfEfz2E.jpg" alt="Family Suite">
+          </div>
+          <div class="room-body">
+            <h3>FAMILY SUITE</h3>
+            <p class="room-desc">Two king bedrooms, a shared living space, and room to breathe. Everything a family needs, nothing they don't.</p>
+            <div class="room-reveal">
+              <div class="room-specs">
+                <span class="spec"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M3 17v-4a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v4M3 17h18M3 17v3M21 17v3M6 10V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> 2 King Beds</span>
+                <span class="spec"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.4" fill="none"/><circle cx="17" cy="9" r="2.5" stroke="currentColor" stroke-width="1.4" fill="none"/><path d="M3 19c.5-3 3-5 6-5s5.5 2 6 5M14 19c.4-2 2-3.5 4-3.5s3 1 3.5 2.5" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg> 4 Guests</span>
+                <span class="spec"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M4 4h4M4 4v4M20 4h-4M20 4v4M4 20h4M4 20v-4M20 20h-4M20 20v-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg> 125 Sqm</span>
+              </div>
+              <div class="room-price"><span class="amt">$799</span> <em>/night</em></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="offers" id="offers">
+      <div class="section-head">
+        <h2 class="section-title">OFFERS</h2>
+        <p class="section-lead">Exceptional stays, made even more rewarding. Our latest offers are waiting.</p>
+      </div>
+      <div class="offers-list">
+        <article class="offer-row" data-anim>
+          <div class="offer-body">
+            <h3>Weekend Retreat — Complimentary Spa</h3>
+            <p>Arrive Friday, leave refreshed on Sunday. Every weekend stay includes access to our spa and wellness facilities.</p>
+            <a class="pill-btn" href="#reserve">Read More</a>
+          </div>
+          <div class="offer-media"><img src="https://framerusercontent.com/images/qHGaS4A8hQjFZ7jvIIvyar9vNA.jpg" alt="Weekend Retreat"></div>
+        </article>
+        <article class="offer-row" data-anim>
+          <div class="offer-body">
+            <h3>Summer Escape — 30% Off</h3>
+            <p>Book direct and save on stays of 3 nights or more. Includes daily breakfast and late checkout.</p>
+            <a class="pill-btn" href="#reserve">Read More</a>
+          </div>
+          <div class="offer-media"><img src="https://framerusercontent.com/images/NjWGPdw1tCzVvBSe1H0rj4ZfVI.jpg" alt="Summer Escape"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="section-head center">
+        <h2 class="section-title">visitor reviews</h2>
+        <p class="section-lead">Don't just take our word for it — hear from the guests who've personally experienced every moment for themselves.</p>
+      </div>
+      <div class="review-stage">
+        <blockquote class="review-quote" id="reviewQuote">
+          "From the moment we arrived, every detail was perfectly taken care of. The rooms are stunning, the service impeccable, and the views absolutely breathtaking. We will absolutely be returning."
+        </blockquote>
+        <cite class="review-cite" id="reviewCite">Sarah M. | TripAdvisor</cite>
+        <div class="review-dots" role="tablist" id="reviewDots">
+          <button class="dot active" data-i="0" aria-label="Review 1"></button>
+          <button class="dot" data-i="1" aria-label="Review 2"></button>
+          <button class="dot" data-i="2" aria-label="Review 3"></button>
+          <button class="dot" data-i="3" aria-label="Review 4"></button>
+          <button class="dot" data-i="4" aria-label="Review 5"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="note">
+      <div class="note-card">
+        <div class="note-head">
+          <svg class="note-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M14 13 V27 M14 20 H26 M26 13 V27" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="square"/>
+          </svg>
+          <h2>DEAR GUEST,</h2>
+        </div>
+        <div class="note-body">
+          <p>Welcome to Hotellia. We are honoured to have you with us. This hotel was built around a single idea — that a great stay is felt in the details. From the thread count of your sheets to the view from your window, everything here has been chosen with one purpose: your complete comfort.</p>
+          <p>Our team is available around the clock to assist with anything you may need — whether that is a dinner reservation, local recommendations, extra pillows, or simply a question. We are here, and we are glad you are here too.</p>
+          <p>We hope your time with us feels like a genuine pause from the ordinary. Rest well, explore freely, and make yourself entirely at home.</p>
+          <p class="script-sign">Marco Delacroix</p>
+          <p class="signature">Marco Delacroix, General Manager</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="section-head">
+        <h2 class="section-title">GOT QUESTIONS?</h2>
+        <p class="section-lead">Everything you need to know, plan, and prepare before you arrive at your doorstep.</p>
+      </div>
+      <ul class="faq-list">
+        <li class="faq-item">
+          <button class="faq-q">
+            <span>What time is check-in and check-out?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Check-in begins at 3:00 PM and check-out is at 11:00 AM. Early check-in and late check-out can be arranged on request, subject to availability.</p></div>
+        </li>
+        <li class="faq-item">
+          <button class="faq-q">
+            <span>Do you offer airport transfers?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. Our concierge can arrange private transfers from the airport. Please share your flight details at least 24 hours before arrival.</p></div>
+        </li>
+        <li class="faq-item">
+          <button class="faq-q">
+            <span>Is breakfast included in the stay?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Breakfast is included in select rates and offers. You'll see it noted on your booking confirmation; otherwise, it can be added at any time.</p></div>
+        </li>
+        <li class="faq-item">
+          <button class="faq-q">
+            <span>Is the hotel suitable for families or children?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Absolutely. Our Family Suite is purpose-built for families, and we offer cribs, child-friendly menus, and activity recommendations on request.</p></div>
+        </li>
+        <li class="faq-item">
+          <button class="faq-q">
+            <span>Do you offer concierge or local experience services?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Yes. Our concierge curates everything from guided tours and tastings to private dinners and wellness experiences — just ask.</p></div>
+        </li>
+        <li class="faq-item">
+          <button class="faq-q">
+            <span>What is your cancellation policy?</span>
+            <span class="faq-toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-a"><p>Most bookings can be cancelled free of charge up to 48 hours before arrival. Promotional rates may carry different terms — please review at checkout.</p></div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="reserve">
+    <div class="footer-inner">
+      <div class="footer-tagline">
+        Thoughtfully crafted spaces where every detail invites you to slow down and stay a little longer.
+      </div>
+      <div class="footer-links">
+        <div class="footer-col primary">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#dine">Wine &amp; Dine</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#reserve">Reserve</a></li>
+          </ul>
+        </div>
+        <div class="footer-col secondary">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">404</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:0225259520" class="contact-item">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          022 5259-5200
+        </a>
+        <a href="mailto:welcome@hotellia.com" class="contact-item">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1" stroke="currentColor" stroke-width="1.4" fill="none"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>
+          welcome@hotellia.com
+        </a>
+        <a href="#" class="contact-item">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M14 4h3v4h-3c-1 0-1 .5-1 1.5V12h4l-1 4h-3v8h-4v-8H6v-4h3V9c0-3 2-5 5-5z" fill="currentColor"/></svg>
+          Follow us on Facebook
+        </a>
+        <a href="#" class="contact-item">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.4" fill="none"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.4" fill="none"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+          Our Instagram
+        </a>
+      </div>
+    </div>
+    <svg class="footer-mark" viewBox="0 0 1408 260" preserveAspectRatio="xMidYEnd meet" aria-label="HOTELLIA">
+      <text x="704" y="234" text-anchor="middle" font-family="'Libre Baskerville', Georgia, serif" font-size="250" font-weight="400" fill="currentColor" letter-spacing="-4">HOTELLIA</text>
+    </svg>
+    <div class="footer-bottom">
+      <small>© 2026 Hotellia — Inspired replica template. All photography credited to original source.</small>
+    </div>
+  </footer>
+
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
