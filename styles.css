@@ -171,7 +171,9 @@ p { margin: 0; }
 .hero {
   position: sticky;
   top: 0;
-  height: 100vh; min-height: 640px;
+  height: 100vh;
+  height: 100svh;
+  min-height: 640px;
   color: #fff;
   overflow: hidden;
   z-index: 1;
@@ -361,7 +363,7 @@ p { margin: 0; }
   gap: clamp(24px, 4vw, 56px);
   background: var(--color-bg);
   padding: clamp(20px, 2.5vw, 36px);
-  border-radius: var(--radius);
+  border-radius: 0;
   position: sticky;
   box-shadow: 0 -10px 24px rgba(0, 0, 0, 0.04);
 }
@@ -582,7 +584,7 @@ p { margin: 0; }
 
 /* FAQ ------------------------------------------------------ */
 .faq-list { list-style: none; padding-left: var(--gutter); padding-right: var(--gutter); padding-bottom: var(--sp-7); display: flex; flex-direction: column; gap: 12px; }
-.faq-item { background: var(--color-bg); border-radius: var(--radius); padding: 0 28px; box-shadow: 0 1px 0 rgba(0,0,0,0.02); }
+.faq-item { background: var(--color-bg); border-radius: 0; padding: 0 28px; box-shadow: 0 1px 0 rgba(0,0,0,0.02); }
 .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: var(--sp-3); padding: 22px 0; font-family: var(--font-serif); font-weight: 700; font-size: clamp(17px, 1.5vw, 20px); text-align: left; color: var(--color-title); }
 .faq-q:hover { color: var(--color-accent); }
 .faq-toggle { font-size: 24px; font-family: var(--font-sans); font-weight: 300; transition: transform .35s var(--ease); color: var(--color-ink); }
@@ -648,14 +650,11 @@ p { margin: 0; }
 /* Responsive ----------------------------------------------- */
 @media (max-width: 960px) {
   .dine-grid { grid-template-columns: 1fr; }
-  .exp-list { gap: clamp(20px, 4vw, 32px); }
+  .exp-list { gap: clamp(60px, 10vh, 110px); }
   .exp-row {
     grid-template-columns: 140px 1fr;
     grid-template-areas: "label copy" "media media";
     gap: var(--sp-2) var(--sp-3);
-    position: relative;
-    top: auto !important;
-    box-shadow: none;
   }
   .exp-row .exp-media { aspect-ratio: 16/9; }
   .offer-row {
@@ -683,7 +682,13 @@ p { margin: 0; }
   :root { --sp-7: 64px; --sp-6: 48px; --gutter: 20px; }
   .hero-tag-row { gap: var(--sp-2); margin-bottom: var(--sp-2); }
   .eyebrow { white-space: normal; font-size: 13px; max-width: 18ch; letter-spacing: -0.02em; }
-  .hero-foot { bottom: 16px; }
+  .hero-foot { bottom: 28px; }
+  .brand-title { font-size: min(18.5vw, 30svh); line-height: 1.1; padding-bottom: 0.08em; }
+  .exp-list { gap: clamp(48px, 8vh, 80px); }
+  .exp-row:nth-child(1) { top: 70px; }
+  .exp-row:nth-child(2) { top: 84px; }
+  .exp-row:nth-child(3) { top: 98px; }
+  .exp-row:nth-child(4) { top: 112px; }
   .section-head { padding-top: var(--sp-6); padding-bottom: var(--sp-4); }
   .ticker { padding: 18px 0; }
   .ticker-track { gap: 48px; animation-duration: 28s; }
@@ -703,8 +708,11 @@ p { margin: 0; }
   .rooms-grid { gap: var(--sp-2); padding-left: var(--gutter); padding-right: var(--gutter); }
   .room-body { padding: 20px 18px 24px; }
   .room-specs { gap: 14px; font-size: 13px; }
-  .offers-list { gap: var(--sp-2); padding-left: var(--gutter); padding-right: var(--gutter); }
-  .offer-body { padding: 24px; }
+  .offers-list { gap: 18px; padding-left: var(--gutter); padding-right: var(--gutter); }
+  .offer-body { padding: 26px 24px 28px; gap: 14px; }
+  .offer-body h3 { font-size: 22px; margin-bottom: 0; line-height: 1.25; }
+  .offer-body p { margin-bottom: 0; font-size: 14px; line-height: 1.55; max-width: none; }
+  .offer-body .pill-btn { margin-top: 4px; align-self: flex-start; padding: 11px 22px; font-size: 13px; }
   .note { padding-left: var(--gutter); padding-right: var(--gutter); }
   .note-card { padding: 28px 22px; }
   .note-head h2 { font-size: 28px; }
