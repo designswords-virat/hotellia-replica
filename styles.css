@@ -422,13 +422,13 @@ p { margin: 0; }
 .room-media {
   position: relative;
   width: 100%;
-  height: 75%;
+  aspect-ratio: 4/3;
   flex-shrink: 0;
+  align-self: center;
   overflow: hidden;
   border-radius: 0;
-  transform-origin: center;
-  transition: height .55s var(--ease), transform .55s var(--ease);
-  will-change: transform, height;
+  transition: width .55s var(--ease);
+  will-change: width;
 }
 .room-media img {
   width: 100%; height: 100%; object-fit: cover;
@@ -437,8 +437,7 @@ p { margin: 0; }
 
 .room-card:hover .room-media,
 .room-card:focus-within .room-media {
-  height: 38%;
-  transform: scale(0.78) translateY(10px);
+  width: 60%;
 }
 
 .room-body {
