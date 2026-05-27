@@ -434,7 +434,7 @@ p { margin: 0; }
 
 .room-card:hover .room-media,
 .room-card:focus-within .room-media {
-  transform: scale(0.8);
+  transform: scale(0.72) translateY(30px);
 }
 
 .room-body {
