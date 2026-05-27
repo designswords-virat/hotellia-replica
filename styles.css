@@ -209,16 +209,15 @@ p { margin: 0; }
 .brand-title {
   display: block;
   width: 100%;
-  font-family: var(--font-serif);
-  font-weight: 400;
-  font-size: clamp(48px, min(21vw, 42vh), 360px);
-  line-height: 1.05;
-  letter-spacing: -0.04em;
-  text-align: center;
-  white-space: nowrap;
   margin: 0;
-  padding-bottom: 0.06em;
+  padding: 0;
   color: #fff;
+  font-size: 0;
+}
+.brand-title svg {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Ticker ---------------------------------------------------- */
@@ -683,7 +682,7 @@ p { margin: 0; }
   .hero-tag-row { gap: var(--sp-2); margin-bottom: var(--sp-2); }
   .eyebrow { white-space: normal; font-size: 13px; max-width: 18ch; letter-spacing: -0.02em; }
   .hero-foot { bottom: 72px; }
-  .brand-title { font-size: min(17vw, 26svh); line-height: 1; padding-bottom: 0.04em; letter-spacing: -0.04em; }
+  .brand-title { padding: 0 16px; }
   .exp-list { gap: clamp(48px, 8vh, 80px); }
   .exp-row:nth-child(1) { top: 70px; }
   .exp-row:nth-child(2) { top: 84px; }
