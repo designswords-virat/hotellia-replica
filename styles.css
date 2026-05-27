@@ -682,8 +682,8 @@ p { margin: 0; }
   :root { --sp-7: 64px; --sp-6: 48px; --gutter: 20px; }
   .hero-tag-row { gap: var(--sp-2); margin-bottom: var(--sp-2); }
   .eyebrow { white-space: normal; font-size: 13px; max-width: 18ch; letter-spacing: -0.02em; }
-  .hero-foot { bottom: 56px; }
-  .brand-title { font-size: min(22vw, 28svh); line-height: 1; padding-bottom: 0.04em; }
+  .hero-foot { bottom: 64px; }
+  .brand-title { font-size: min(20vw, 28svh); line-height: 1; padding-bottom: 0.04em; letter-spacing: -0.05em; }
   .exp-list { gap: clamp(48px, 8vh, 80px); }
   .exp-row:nth-child(1) { top: 70px; }
   .exp-row:nth-child(2) { top: 84px; }
